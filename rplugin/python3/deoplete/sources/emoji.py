@@ -23,9 +23,7 @@ class Source(Base):
         self.name = 'emoji'
 
     def gather_candidates(self, context):
-        return [
-            {'word': name, 'kind': code_points} for name, code_points in EMOJI_UNICODE.items()
-        ]
+        return [{'word': k, 'kind': v} for (k, v) in EMOJI_UNICODE.items()]
 
     def get_complete_position(self, context):
         match = self.__pattern.search(context['input'])
