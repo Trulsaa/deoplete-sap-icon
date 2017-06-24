@@ -6,7 +6,7 @@
 For emoji cheat sheet, see https://www.webpagefx.com/tools/emoji-cheat-sheet/.
 """
 
-EMOJI_UNICODE = {
+EMOJI_CODES = {
     ':+1:': '\U0001f44d',
     ':-1:': '\U0001f44e',
     ':100:': '\U0001f4af',

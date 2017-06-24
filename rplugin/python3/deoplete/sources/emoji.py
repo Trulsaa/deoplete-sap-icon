@@ -8,7 +8,7 @@ from .base import Base
 from deoplete.util import load_external_module
 
 load_external_module(__file__, 'sources/emoji')
-from emoji_unicode import EMOJI_UNICODE
+from emoji_codes import EMOJI_CODES
 
 
 class Source(Base):
@@ -23,7 +23,7 @@ class Source(Base):
         self.name = 'emoji'
 
     def gather_candidates(self, context):
-        return [{'word': k, 'kind': v} for (k, v) in EMOJI_UNICODE.items()]
+        return [{'word': k, 'kind': v} for (k, v) in EMOJI_CODES.items()]
 
     def get_complete_position(self, context):
         match = self.__pattern.search(context['input'])
