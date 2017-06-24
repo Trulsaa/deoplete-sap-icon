@@ -29,7 +29,4 @@ class Source(Base):
 
     def get_complete_position(self, context):
         match = self.__pattern.search(context['input'])
-        if match:
-            return match.start()
-
-        return -1
+        return match.start() if match is not None else -1
