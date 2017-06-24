@@ -2,7 +2,9 @@
 # Use of this source code is governed by an MIT license that can be
 # found in the LICENSE file.
 
-# https://www.webpagefx.com/tools/emoji-cheat-sheet/
+"""
+For emoji cheat sheet, see https://www.webpagefx.com/tools/emoji-cheat-sheet/.
+"""
 
 EMOJI_UNICODE = {
     ':+1:': '\U0001f44d',
