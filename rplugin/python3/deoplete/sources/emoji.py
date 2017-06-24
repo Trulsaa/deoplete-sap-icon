@@ -17,6 +17,7 @@ class Source(Base):
 
         self.__pattern = re.compile(r':[^: \t]+')
 
+        self.filetypes = ['gitcommit', 'markdown', 'text']
         self.mark = '[emoji]'
         self.matchers = ['matcher_length', 'matcher_full_fuzzy']
         self.name = 'emoji'
