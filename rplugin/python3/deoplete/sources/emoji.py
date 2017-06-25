@@ -15,9 +15,9 @@ class Source(Base):
     def __init__(self, vim):
         super().__init__(vim)
 
-        self.__pattern = re.compile(r':[^: \t]+')
+        self.__pattern = re.compile(r':[^:\s]*$')
 
-        self.filetypes = ['gitcommit', 'markdown', 'text']
+        self.filetypes = ['gitcommit', 'markdown']
         self.mark = '[emoji]'
         self.matchers = ['matcher_length', 'matcher_full_fuzzy']
         self.name = 'emoji'

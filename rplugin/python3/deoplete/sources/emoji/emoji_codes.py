@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 """
-For emoji cheat sheet, see https://www.webpagefx.com/tools/emoji-cheat-sheet/.
+For a full list of available emoji and codes, see https://www.webpagefx.com/tools/emoji-cheat-sheet/.
 """
 
 EMOJI_CODES = {
