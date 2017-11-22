@@ -1,0 +1,55 @@
+*deoplete_sap-icon.txt* Deoplete source for sap-icon
+
+Author: Truls <truls.aa@gmail.com>
+
+==============================================================================
+CONTENTS                                             *deoplete-sap-icon-contents*
+
+  1. Introduction                               |deoplete-sapui5-icon-introduction|
+  2. Configuration                              |deoplete-sapui5-icon-configuration|
+  3. License                                    |deoplete-sapui5-icon-license|
+  4. Bugs                                       |deoplete-sapui5-icon-bugs|
+  5. Contributing                               |deoplete-sapui5-icon-contributing|
+
+==============================================================================
+INTRODUCTION                                     *deoplete-sap-icon-introduction*
+
+This deoplete[1] source offers asynchronous completion of sapui5-icons. You
+can add sap-icon to your document by writing |:ICON-NAME:|. For a full list
+of available icons, see https://sapui5.hana.ondemand.com/sdk/iconExplorer.html.
+
+==============================================================================
+CONFIGURATION                                   *deoplete-sap-icon-configuration*
+
+The |deoplete#custom#set()| function can by used to change the |filetypes|
+for this source.
+>
+  call deoplete#custom#set('icons', 'filetypes', ['rst'])
+<
+Default: ['gitcommit', 'markdown']
+
+==============================================================================
+LICENSE                                               *deoplete-sap-icon-license*
+
+MIT
+
+==============================================================================
+BUGS                                                     *deoplete-sap-icon-bugs*
+
+If you find a bug please create an issue on GitHub.
+
+https://github.com/Trulsaa/deoplete-sap-icon/issues
+
+==============================================================================
+CONTRIBUTING                                     *deoplete-sap-icon-contributing*
+
+Think you can make this plugin better? Awesome. Fork it on GitHub and create
+a pull request.
+
+https://github.com/Trulsaa/deoplete-sap-icon
+
+==============================================================================
+
+[1] https://github.com/Shougo/deoplete.nvim
+
+ vim: tw=78 ts=8 ft=help norl

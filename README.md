@@ -1,4 +1,4 @@
-# deoplete-emoji
+# deoplete-sap-icon
 
 `Deoplete-emoji` offers asynchronous completion of emoji codes. You can add emoji to your document by writing `:EMOJICODE:`.
 For a full list of available emoji and codes, see [emoji-cheat-sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/).

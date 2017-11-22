@@ -7,8 +7,8 @@ import re
 from .base import Base
 from deoplete.util import load_external_module
 
-load_external_module(__file__, 'sources/emoji')
-from emoji_codes import EMOJI_CODES
+load_external_module(__file__, 'sources/icons')
+from icon_codes import ICON_CODES
 
 
 class Source(Base):
@@ -18,12 +18,12 @@ class Source(Base):
         self.__pattern = re.compile(r':[^:\s]*$')
 
         self.filetypes = ['gitcommit', 'markdown']
-        self.mark = '[emoji]'
+        self.mark = '[icons]'
         self.matchers = ['matcher_length', 'matcher_full_fuzzy']
-        self.name = 'emoji'
+        self.name = 'icons'
 
     def gather_candidates(self, context):
-        return [{'word': k, 'kind': v} for (k, v) in EMOJI_CODES.items()]
+        return [{'word': k, 'kind': v} for (k, v) in ICON_CODES.items()]
 
     def get_complete_position(self, context):
         match = self.__pattern.search(context['input'])
