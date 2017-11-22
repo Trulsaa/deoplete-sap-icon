@@ -15,9 +15,9 @@ class Source(Base):
     def __init__(self, vim):
         super().__init__(vim)
 
-        self.__pattern = re.compile(r':[^:\s]*$')
+        self.__pattern = re.compile(r'sap-icon')
 
-        self.filetypes = ['gitcommit', 'markdown']
+        self.filetypes = ['javascript', 'xml', 'html']
         self.mark = '[icons]'
         self.matchers = ['matcher_length', 'matcher_full_fuzzy']
         self.name = 'icons'
