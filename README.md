@@ -3,7 +3,7 @@
 `Deoplete-sap-icon` offers asynchronous completion of icons urls. You can add icons to your code by writing `icon`.
 For a full list of available icons and codes, see [Icon Explorer](https://sapui5.hana.ondemand.com/sdk/iconExplorer.html).
 
-![](https://user-images.githubusercontent.com/25827968/27698987-195ead00-5cf9-11e7-8bcd-5e88e111f35a.png)
+![](img/screenshot.png)
 
 ## Installation
 
