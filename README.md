@@ -13,5 +13,5 @@ To install `deoplete-sap-icon`, use your favorite [Neovim](https://neovim.io/) p
 
 ```vim
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'https://innersource.soprasteria.com/NO-Applications-SAP/deoplete-sap-icon.git'
+Plug 'https://github.com/Trulsaa/deoplete-sap-icon.git'
 ```
